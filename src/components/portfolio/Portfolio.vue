@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-stock v-for="stock in stocks">{{ stock.name }}</app-stock>
+    <app-stock v-for="stock in stocks" :stock="stock"></app-stock>
   </div>
 </template>
 <script>
@@ -11,7 +11,7 @@ export default {
   computed: {
     ...mapGetters({
       stocks: 'stockPortfolio'
-    }),
+    })
   },
   components: {
     appStock

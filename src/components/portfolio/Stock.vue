@@ -29,7 +29,7 @@
 <script>
   import { mapActions } from 'vuex';
   export default {
-    props: ['stocks'],
+    props: ['stock'],
     data() {
       return {
         quantity: 0
